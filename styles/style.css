@@ -243,6 +243,7 @@ nav a:hover::after {
     color: var(--branco);
     height: 100dvh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -530,3 +531,4 @@ a, button {
           width: 90%;
         }
       }
+
