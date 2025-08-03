@@ -243,7 +243,6 @@ nav a:hover::after {
     color: var(--branco);
     height: 100dvh;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -521,14 +520,139 @@ a, button {
   }
 }
 
-      @media (max-width: 768px) {
-        .projetos {
-          flex-direction: column;
-          align-items: center;
-        }
+/*
+ * RESPONSIVIDADE PARA CELULARES
+ * ----------------------------
+ * Adicione este bloco no final do seu arquivo style.css para
+ * garantir que o layout se adapte a telas menores.
+ */
 
-        .projeto {
-          width: 90%;
-        }
-      }
+@media (max-width: 768px) {
+    /* Estilos gerais para celular */
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
 
+    header {
+        padding: 15px 20px;
+        box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    /* Seção de Início (Hero) */
+    .hero {
+        height: auto;
+        min-height: 100dvh;
+        padding-top: 80px; /* Para evitar que o conteúdo fique atrás do menu fixo */
+        padding-bottom: 20px;
+    }
+
+    .hero .content {
+        padding: 0 20px;
+    }
+
+    .animated-name {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .scroll-down-hint {
+        position: static; /* Remove a posição absoluta para não sobrepor o conteúdo */
+        margin-top: 30px;
+    }
+
+    /* Seção Sobre Mim */
+    .sobre {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .sobre-container {
+        text-align: center;
+        padding: 0;
+    }
+
+    .sobre h2 {
+        font-size: 2rem;
+    }
+
+    .tech-logos {
+        grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .tech-logos img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Seção de Projetos */
+    .projetos {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .projetos h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .projetos-grid {
+        grid-template-columns: 1fr; /* Coluna única para celulares */
+    }
+
+    .card-projeto p {
+        min-height: auto;
+    }
+
+    /* Seção de Contato */
+    .contato {
+        margin: 50px auto;
+        padding: 40px 20px;
+    }
+
+    .contato h2 {
+        font-size: 2.2rem;
+    }
+
+    .contato p {
+        font-size: 1rem;
+    }
+
+    .contato-box {
+        gap: 15px;
+    }
+
+    .btn-whatsapp {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+/* Para telas menores que 480px, ajustes finos */
+@media (max-width: 480px) {
+    .animated-name {
+        font-size: 2rem;
+    }
+    
+    .sobre h2, .projetos h2, .contato h2 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .tech-logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
