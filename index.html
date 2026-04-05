@@ -1,145 +1,234 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | José Vinicios</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinícius | Desenvolvedor Web</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#home">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="content">
-                <h1 class="animated-name">José Vinicios</h1>
-                <div class="sobre-texto">
-                    <p>Sou José Vinícius, desenvolvedor web apaixonado por tecnologia, sempre buscando evoluir e entregar o melhor em cada projeto.</p>
-                    <p>Atualmente curso <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> e já concluí mais de <strong>10 cursos certificados</strong> na área de programação, desenvolvimento web e tecnologias modernas.</p>
-                    <p>Tenho experiência com projetos reais, foco em resultados e dedicação em cada linha de código.</p>
-                </div>
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Vinicius<span>.</span></a>
+
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <a 
+        href="https://wa.me/5521995294926?text=Olá%20Vinícius%2C%20vim%20pelo%20seu%20portfólio."
+        target="_blank"
+        class="nav-cta"
+      >
+        Vamos conversar
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-text reveal">
+          <span class="hero-tag">Desenvolvedor Web • Automação • APIs</span>
+
+          <h1>
+            Eu crio <span>sites modernos</span>,
+            sistemas e automações
+            para negócios que querem crescer.
+          </h1>
+
+          <p class="hero-description">
+            Desenvolvimento de sites, landing pages, APIs, bots e sistemas personalizados
+            com foco em performance, visual profissional e resultado real.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a 
+              href="https://wa.me/5521995294926?text=Olá%20Vinícius%2C%20quero%20fazer%20um%20orçamento."
+              target="_blank"
+              class="btn btn-secondary"
+            >
+              Pedir orçamento
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <strong>Sites</strong>
+              <span>Modernos e responsivos</span>
             </div>
-        </section>
 
-        <section id="sobre" class="sobre">
-            <div class="sobre-container">
-                <h2>Sobre Mim</h2>
-                <p>
-                    Tenho experiência na criação de <strong>APIs, sites e bots</strong> personalizados, sempre buscando unir funcionalidade com desempenho.
-                </p>
-                <p>
-                    Minha linguagem principal é <strong>JavaScript</strong>, mas estou sempre aprendendo e evoluindo. Atualmente me aprofundo em <strong>PHP, C#</strong> e programação orientada a objetos (<strong>POO</strong>), buscando ampliar minhas habilidades para entregar projetos cada vez mais completos.
-                </p>
-                <p>
-                    Ao longo da minha jornada já tive a honra de atender <strong>clientes renomados</strong> na área, sempre com compromisso, criatividade e aquele toque de quem resolve problema mesmo. Se você procura um dev que joga pra frente, bora conversar!
-                </p>
-
-                <div class="tech-logos">
-                    <img src="imgs/logojs.png" alt="JavaScript">
-                    <img src="imgs/logonode.png" alt="PHP">
-                    <img src="imgs/logophp.png" alt="C#" id="logophp">
-                    <img src="imgs/logohtml.png" alt="HTML5">
-                    <img src="imgs/logocss.png" alt="CSS3">
-                    <img src="imgs/logocsharp.png" alt="Node.js">
-                </div>
+            <div class="metric-card">
+              <strong>APIs</strong>
+              <span>Integrações e automações</span>
             </div>
-        </section>
 
-        <section id="projetos" class="projetos">
-            <h2>Meus Projetos</h2>
-            <div class="projetos-grid">
-                <!-- Projeto 1 -->
-                <div class="card-projeto">
-                    <img src="imgs/project 1.png" alt="Projeto 1">
-                    <h3>Bot de Atendimento</h3>
-                    <p>Bot de WhatsApp criado com JavaScript e Node.js, com painel de controle remoto e integração de catálogo.</p>
-                    <div class="tech-usadas">
-                        <strong>Tecnologias usadas:</strong>
-                        <div class="badges">
-                            <span class="badge">JavaScript</span>
-                            <span class="badge">Node.js</span>
-                            <span class="badge">Express</span>
-                            <span class="badge">WhatsApp API</span>
-                        </div>
-                    </div>
-                    <a href="https://github.com/Vinicios2j/AG-Bot---WhatsApp-Autom-tico-com-Painel-API" target="_blank">Ver no GitHub</a>
-                </div>
-
-                <!-- Projeto 2 DESTACADO -->
-                <div class="card-projeto destaque">
-                    <img src="imgs/projeto2.png" alt="Projeto 2">
-                    <h3 class="titulo-destaque">API MRO GERENCIAMENTO ⭐</h3>
-                    <p>API robusta de gerenciamento e autenticação de usuários, desenvolvida em Node.js com foco em segurança e escalabilidade.</p>
-                    <div class="tech-usadas">
-                        <strong>Tecnologias usadas:</strong>
-                        <div class="badges">
-                            <span class="badge">Node.js</span>
-                            <span class="badge">Express.js</span>
-                            <span class="badge">WIO.DB</span>
-                            <span class="badge">Node-cron</span>
-                        </div>
-                    </div>
-                    <a href="https://github.com/Vinicios2j/ProjectMRO" target="_blank">Ver no GitHub</a>
-                </div>
-
-                 
-
-                <!-- Projeto 3 -->
-                <div class="card-projeto">
-                    <img src="imgs/projeto3.png" alt="Projeto 3">
-                    <h3>Landing Page Profissional</h3>
-                    <p>Site institucional 100% responsivo, criado para eletricista parceiro com foco em captação de clientes.</p>
-                    <div class="tech-usadas">
-                        <strong>Tecnologias usadas:</strong>
-                        <div class="badges">
-                            <span class="badge">HTML5</span>
-                            <span class="badge">CSS3</span>
-                            <span class="badge">JavaScript</span>
-                            <span class="badge">Design Responsivo</span>
-                        </div>
-                    </div>
-                    <a href="https://github.com/Vinicios2j/SITE-AG/tree/main" target="_blank">Ver no GitHub</a>
-                </div>
+            <div class="metric-card">
+              <strong>Foco</strong>
+              <span>Fechar cliente e vender</span>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <section id="contato" class="contato">
-            <h2>Contato</h2>
-            <p>Vamos conversar? Estou disponível para novos projetos, parcerias ou dúvidas.</p>
+        <div class="hero-image reveal delay-2">
+          <div class="photo-frame">
+            <div class="photo-glow"></div>
+            <img src="imgs/foto.png" alt="Foto de Vinícius">
+          </div>
+        </div>
 
-            <div class="contato-box">
-                <div class="info">
-                    <p>📍 Localização: Rio de Janeiro, Brasil</p>
-                    <p>✉️ Email: <a href="mailto:jose.vinicius.batista292@gmail.com">jose.vinicius.batista292@gmail.com</a></p>
-                    <p>📱 WhatsApp: <a href="https://wa.me/5521995294926" target="_blank">(21) 99529-4926</a></p>
-                </div>
+      </div>
+    </section>
 
-                <a href="https://wa.me/5521995294926?text=Olá%20José%20Vincios%2C%20vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20conversar."
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn-whatsapp pulse-btn">
-                    💬 Fale comigo no WhatsApp
-                </a>
+    <section id="sobre" class="about section">
+      <div class="container reveal">
+        <div class="section-title-wrap">
+          <span class="section-label">Sobre mim</span>
+          <h2>Desenvolvo soluções web com visual forte e estrutura profissional</h2>
+        </div>
+
+        <div class="about-box">
+          <p>
+            Sou Vinícius, desenvolvedor focado em criar experiências modernas para web,
+            sistemas personalizados, bots e automações. Trabalho principalmente com
+            JavaScript, Node.js, HTML, CSS e integrações que ajudam negócios a terem
+            mais presença digital e mais eficiência.
+          </p>
+
+          <p>
+            Meu objetivo não é só deixar bonito. É criar algo com cara profissional,
+            estrutura sólida e visual que realmente passe valor para o cliente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="projects section">
+      <div class="container">
+        <div class="section-title-wrap reveal">
+          <span class="section-label">Projetos</span>
+          <h2>Alguns trabalhos em destaque</h2>
+          <p>Essa grade já fica pronta para você adicionar mais projetos depois.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="imgs/project 1.png" alt="Bot de Atendimento">
             </div>
-        </section>
 
+            <div class="project-content">
+              <span class="project-badge">Automação</span>
+              <h3>Bot de Atendimento</h3>
+              <p>
+                Bot de WhatsApp com painel de controle, respostas automáticas e integração
+                para catálogos e atendimento.
+              </p>
 
-    </main>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Express</span>
+              </div>
 
-    <footer class="scroll-down-hint">
-        <p>Arraste para baixo</p>
-        <span class="arrow">↓</span>
-    </footer>
+              <a href="https://github.com/Vinicios2j/AG-Bot---WhatsApp-Autom-tico-com-Painel-API" target="_blank" class="project-link">
+                Ver projeto
+              </a>
+            </div>
+          </article>
 
-    <script src="scripts/index.js"></script>
+          <article class="project-card highlight reveal delay-2">
+            <div class="project-image">
+              <img src="imgs/projeto2.png" alt="API MRO">
+            </div>
+
+            <div class="project-content">
+              <span class="project-badge featured">Destaque</span>
+              <h3>API de Gerenciamento</h3>
+              <p>
+                API robusta para autenticação, gerenciamento de usuários e estrutura
+                pensada para crescimento do sistema.
+              </p>
+
+              <div class="project-tags">
+                <span>Node.js</span>
+                <span>WIO.DB</span>
+                <span>Express</span>
+              </div>
+
+              <a href="https://github.com/Vinicios2j/ProjectMRO" target="_blank" class="project-link">
+                Ver projeto
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-3">
+            <div class="project-image">
+              <img src="imgs/projeto3.png" alt="Landing Page">
+            </div>
+
+            <div class="project-content">
+              <span class="project-badge">Web Design</span>
+              <h3>Landing Page Profissional</h3>
+              <p>
+                Página moderna e responsiva feita para apresentação profissional
+                e geração de contatos.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a href="https://github.com/Vinicios2j/SITE-AG/tree/main" target="_blank" class="project-link">
+                Ver projeto
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="projects-footer reveal">
+  <a href="pages/projetos.html" class="btn btn-outline">
+    Ver todos os projetos →
+  </a>
+</div>
+    </section>
+
+    <section id="contato" class="contact section">
+      <div class="container reveal">
+        <div class="contact-box">
+          <span class="section-label">Contato</span>
+          <h2>Quer um site, sistema ou automação com visual profissional?</h2>
+          <p>
+            Me chama no WhatsApp e vamos transformar sua ideia em algo forte,
+            moderno e pronto para impressionar cliente.
+          </p>
+
+          <a 
+            href="https://wa.me/5521995294926?text=Olá%20Vinícius%2C%20quero%20falar%20sobre%20um%20projeto."
+            target="_blank"
+            class="btn btn-primary"
+          >
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/index.js"></script>
 </body>
 </html>
-
-
